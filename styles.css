@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;700&display=swap");
+
+* {
+	/* box-sizing: border-box; */
+	font-family: League Spartan, sans-serif;
+}
+
+:root {
+	--background-color-primary: #fff;
+	--background-color-secondary: #666;
+	--font-color-primary: #000;
+	--font-color-secondary: #dcdcdc;
+}
+
+body {
+	display: flex;
+	/* align-items: center;
+	justify-content: center; */
+	/* height: 100vh; */
+	/* overflow: hidden; */
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	/* background-color: #fff; */
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 40vw;
+}
+
+.hello-message > h1 > a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 3rem;
+}
+
+.nav-menu-list {
+	padding: 0;
+}
+
+.navbar ul li {
+	font-size: 1.5rem;
+	list-style: none;
+	transition: background-color 0.3s ease-in;
+	padding: 5px 20px;
+	/* width: 120%; */
+}
+
+.container-contact {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+	width: 200px;
+	font-size: 1.8rem;
+}
+
+.container-contact a {
+	color: #000;
+}
+
+.container-contact a i {
+	padding: 4px;
+	border-radius: 9px;
+	color: #000;
+}
+
+.container-contact i.fa-instagram:hover {
+	color: #fff;
+	opacity: 1;
+	background: linear-gradient(
+		45deg,
+		#f09433 0%,
+		#e6683c 25%,
+		#dc2743 50%,
+		#cc2366 75%,
+		#bc1888 100%
+	);
+}
+
+.container-contact i.fa-linkedin:hover {
+	color: #0e76a8;
+}
+.container-contact i.fa-envelope:hover {
+	color: #ad0d08;
+}
+
+.navbar ul li:hover {
+	background-color: #dcdcdc;
+}
+
+main {
+	margin-left: 40vw; /* Asegura que el contenido del main no esté oculto detrás del header fijo */
+	padding: 20px;
+	overflow: auto;
+}

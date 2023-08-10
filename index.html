@@ -24,53 +24,54 @@
 	</head>
 	<body>
 		<header>
-			<!--Nav Boostrap-->
-			<nav class="navbar navbar-expand-lg bg-light fixed-top">
-				<div class="container-fluid p-3 px-4">
-					<a class="navbar-brand" href="#home">RaxusDev</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarTogglerDemo02"
-						aria-controls="navbarTogglerDemo02"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-						<ul class="navbar-nav align-items-end ms-auto mb-2 mb-lg-0 gap-3">
-							<li class="nav-item">
-								<a href="#aboutMe" class="nav-link active" aria-current="page">
-									Sobre Mi
-								</a>
-							</li>
-							<li class="nav-item">
-								<a href="#education" class="nav-link"> Educación </a>
-							</li>
-							<li class="nav-item">
-								<a href="#skills" class="nav-link"> Skills </a>
-							</li>
-							<li class="nav-item">
-								<a href="#contact" class="nav-link"> Contacto </a>
-							</li>
-						</ul>
-					</div>
-				</div>
+			<div class="hello-message">
+				<h1>
+					<a class="page-header" href="#aboutMe">RaxusDev</a>
+				</h1>
+				<p>DESARROLLADOR WEB</p>
+				<p>Junior Engineer en NTT DATA</p>
+				<p>¡Te doy la bienvenida a mi portfolio de desarrollador!</p>
+				<!-- <div class="avatarImg">
+					<img src="..." alt="avatar" />
+				</div> -->
+			</div>
+			<nav class="navbar">
+				<ul class="nav-menu-list">
+					<li class="nav-item">
+						<a href="#aboutMe" class="nav-link active">Sobre Mi</a>
+					</li>
+					<li class="nav-item">
+						<a href="#education" class="nav-link">Educación</a>
+					</li>
+					<li class="nav-item">
+						<a href="#skills" class="nav-link">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a href="#contact" class="nav-link">Contacto</a>
+					</li>
+				</ul>
 			</nav>
-			<!--End Nav Boostrap-->
+			<div class="container-contact">
+				<a href=""><i class="fa-solid fa-envelope"></i></a>
+				<a href=""><i class="fa-brands fa-linkedin"></i></a>
+				<!-- <a href=""><i class="fa-brands fa-instagram fa-bounce"></i></a> -->
+				<a href=""><i class="fa-brands fa-instagram"></i></a>
+			</div>
 		</header>
-		<main class="mx-5">
-			<section id="home">
-				<div class="homeText">
-					<h1>Òscar Hernandez Ferrer</h1>
-					<p>En camino para desarrollador Front End</p>
-
-					<p>¡Te doy la bienvenida a mi portfolio de desarrollador!</p>
-				</div>
-				<div class="avatarImg">
-					<img src="../img/avataaars.png" alt="avatar" />
+		<main>
+			<section id="aboutMe">
+				<h2>Sobre Mi</h2>
+				<div class="aboutText">
+					<p>
+						Como ya he dicho, mi nombre es Òscar Hernandez Ferrer, alias RaxDev. Soy un
+						joven de catalan que, al terminar su carrera de Ingenieria Electornica de
+						Telecomunicaciones, decidio que no era lo suyo y tras descubrir el mundo del
+						desarrollo front-end decidio volcarse en ello para convertirse en un
+						desarrollador web. Tras unos meses de formarme de forma autodidacta, logré
+						mi primer trabajo como desarrollador, donde me encuentro actualmente
+						aprendiendo dia a dia, y creciendo poco a poco. Actualmente me encuentro
+						estudiando aprendiendo Javascript a traves de la plataforma de OpenBootcamp.
+					</p>
 				</div>
 			</section>
 			<section id="aboutMe">
@@ -117,29 +118,12 @@
 					</div>
 				</div>
 			</section>
-			<section id="contact">
-				<h2>Contacto</h2>
-				<p>Si quieres contactar conmigo puedes hacerlo a través de:</p>
-				<div>
-					<div class="contactEmail">
-						<i class=""></i>
-						<p>Email</p>
-						<a href=""></a>
-					</div>
-					<div class="contactLinkedin">
-						<i class=""></i>
-						<p>LinkedIn</p>
-						<a href=""></a>
-					</div>
-					<div class="contactInsta">
-						<i class=""></i>
-						<p>Instagram</p>
-						<a href=""></a>
-					</div>
-				</div>
-			</section>
 		</main>
-		<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+			crossorigin="anonymous"
+		></script>
 		<script src="script.js"></script>
 	</body>
 </html>
