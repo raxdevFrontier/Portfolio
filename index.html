@@ -37,14 +37,14 @@
 					<li class="nav-item">
 						<a href="#aboutMe" class="nav-link active">Sobre Mi</a>
 					</li>
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a href="#education" class="nav-link">Educación</a>
-					</li>
+					</li> -->
 					<li class="nav-item">
 						<a href="#skills" class="nav-link">Skills</a>
 					</li>
 					<li class="nav-item">
-						<a href="#contact" class="nav-link">Contacto</a>
+						<a href="#projects" class="nav-link">Projects</a>
 					</li>
 				</ul>
 			</nav>
@@ -55,26 +55,36 @@
 				<a href=""><i class="fa-brands fa-instagram"></i></a>
 			</div>
 		</header>
-		<main>
+		<main class="main">
 			<div class="avatarImg" id="avatarImg">
-				<img src="../img/myAvatar.png" alt="avatar" />
+				<!-- <img src="../img/myAvatar.png" alt="avatar" /> -->
+				<img src="./img/myAvatar.png" alt="avatar" />
 			</div>
 			<section id="aboutMe">
 				<h2>Sobre Mi</h2>
 				<div class="aboutText">
 					<p>
-						Antes que nada déjame presentarme, mi nombre es Òscar Hernandez. Soy un
-						joven de 26 años que tras descubrir el mundo del desarrollo front-end
-						decidió convertirse en desarrollador web, especializado en desarrollo Front
-						End.
+						<!-- Mi nombre es Òscar Hernandez, desarrollador web, especializado en front-end.
+						Soy un joven de 26 años que tras descubrir el mundo del desarrollo
+						front-end, decidió convertirse en desarrollador web, especializado en
+						desarrollo Front End.
 						<br />
 						Tras unos meses de formarme de forma autodidacta, logré mi primer trabajo
 						como desarrollador, donde me encuentro actualmente aprendiendo dia a dia, y
 						creciendo poco a poco.
+						<br /> -->
+						Permítame presentarme, mi nombre es Òscar Hernandez, un joven de 26 años
+						apasionado por el mundo del desarrollo web. Con un año de experiencia en la
+						industria, he encontrado mi pasión en la creación de experiencias visuales
+						impactantes a través del desarrollo Front End.
+						<br />
+						Con mi mentalidad curiosa y dedicación implacable, me esfuerza por elevar
+						constantemente mis habilidades y llevar cada proyecto a nuevas alturas
+						estéticas y funcionales.
 					</p>
 				</div>
 			</section>
-			<section id="education">
+			<!-- <section id="education">
 				<h2>Educación</h2>
 				<div class="formacionCell formacionUni">
 					<h3 class="tituloFormacion">Ingenieria Electornica de Telecomunicaciones</h3>
@@ -91,17 +101,32 @@
 					<p class="placeFormacion">OpenBootcamp</p>
 					<p class="timeFormacion">Febrero 2023 - En curso</p>
 				</div>
-			</section>
+			</section> -->
 			<section id="skills">
 				<h2>Skills</h2>
 				<div class="skillsContent">
 					<div class="skillsList">
+						<div class="tech-box">
+							<i class="fa-brands fa-html5" style="color: #dd4b24"></i>
+						</div>
+						<div class="tech-box">
+							<i class="fa-brands fa-css3-alt" style="color: #2194f0"></i>
+						</div>
+						<div class="tech-box">
+							<i class="fa-brands fa-square-js" style="color: #efd81d"></i>
+						</div>
+						<div class="tech-box">
+							<i class="fa-brands fa-bootstrap" style="color: #8111f5"></i>
+						</div>
+						<div class="tech-box">
+							<iconify-icon icon="skill-icons:tailwindcss-light" class="tailwindcss-icon"></iconify-icon>
+						</div>
 						<!--    Llistat de habilitats/tecnologies   -->
 					</div>
-					<div class="skillsGraphic">
-						<img src="../img/skills-map.png" alt="hexagonal-graphic" />
+					<figure class="skillsGraphic">
+						<img src="./img/skills-map.png" alt="hexagonal-graphic" />
 						<!--    ProgressBar o Grafic hexagonal de les skills    -->
-					</div>
+					</figure>
 				</div>
 			</section>
 			<section id="projects">
@@ -123,5 +148,6 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="script.js"></script>
+		<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 	</body>
 </html>
