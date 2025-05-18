@@ -1,0 +1,15 @@
+:root {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	header,
+	main,
+	footer {
+		border: 1px solid #000;
+		margin: 0 auto;
+		max-width: 37.5rem;
+		padding: 2rem;
+		text-align: center;
+	}
+}
