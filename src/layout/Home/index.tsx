@@ -1,6 +1,5 @@
-import Hero from '@/sections/hero'
-import React from 'react'
-// import Hero from '../../sections/hero'
+import React from 'react';
+import Hero from '@/sections/hero';
 // import Projects from '@/components/sections/Projects'
 // import About from '@/components/sections/About'
 // import Skills from '@/components/sections/Skills'
@@ -17,7 +16,7 @@ export const Home: React.FC = () => {
 			{/* <Extra /> */}
 			{/* <Contact /> */}
 		</main>
-	)
-}
+	);
+};
 
-export default Home
+export default Home;
