@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '@/sections/hero';
-// import Projects from '@/components/sections/Projects'
+import Projects from '@/sections/myProjects';
 // import About from '@/components/sections/About'
 // import Skills from '@/components/sections/Skills'
 // import Extra from '@/components/sections/Extra'
@@ -10,7 +10,7 @@ export const Home: React.FC = () => {
 	return (
 		<main>
 			<Hero />
-			{/* <Projects /> */}
+			<Projects />
 			{/* <About /> */}
 			{/* <Skills /> */}
 			{/* <Extra /> */}
