@@ -3,18 +3,18 @@
 
 .app__globalContainer {
 	display: grid;
-	grid-template-columns: 37.5rem;
-	grid-template-rows: 1fr 2fr 1fr;
-	align-items: center;
+	grid-template-columns: 100%;
+	grid-template-rows: auto 1fr auto;
+	/* align-items: center;
 	justify-content: center;
-	text-align: center;
+	text-align: center; */
 	height: 100%;
 	box-sizing: border-box;
 
 	header,
 	main,
 	footer {
-		border: 1px solid black;
-		height: 100%;
+		/* border: 1px solid black; */
+		/* height: 100%; */
 	}
 }

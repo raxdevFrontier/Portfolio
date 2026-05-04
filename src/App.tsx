@@ -1,13 +1,13 @@
 import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Main from './components/Main'
+import Header from './layout/Header'
+import Home from './layout/Home'
+import Footer from './layout/Footer'
 
 function App() {
 	return (
 		<div className="app__globalContainer">
 			<Header />
-			<Main />
+			<Home />
 			<Footer />
 		</div>
 	)

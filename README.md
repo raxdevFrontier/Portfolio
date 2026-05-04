@@ -247,3 +247,54 @@ Destaca porque:
 - Es claro
 - Demuestra habilidades reales
 - Comunica cómo piensas como desarrollador
+
+## Estructura carpetas
+
+portfolio/
+│
+├── public/
+│ ├── images/
+│ └── icons/
+│
+├── src/
+│ ├── app/
+│ │ ├── layout.tsx
+│ │ ├── page.tsx
+│ │ └── globals.css
+│ │
+│ ├── components/
+│ │ ├── layout/
+│ │ │ ├── Navbar.tsx
+│ │ │ └── Footer.tsx
+│ │ │
+│ │ ├── sections/
+│ │ │ ├── Hero.tsx
+│ │ │ ├── Projects.tsx
+│ │ │ ├── About.tsx
+│ │ │ ├── Skills.tsx
+│ │ │ ├── Extra.tsx
+│ │ │ └── Contact.tsx
+│ │ │
+│ │ ├── ui/
+│ │ │ ├── Button.tsx
+│ │ │ ├── Card.tsx
+│ │ │ └── Container.tsx
+│ │
+│ ├── data/
+│ │ └── projects.js
+│ │
+│ ├── styles/
+│ │ └── variables.css
+│
+└── package.json
+
+src/
+│
+├── components/
+│ └── themeSelector/
+├── Layout/
+│ ├── Footer/
+│ ├── Home/
+│ └── Header/
+├── sections/
+│ └── hero/
