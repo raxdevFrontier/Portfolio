@@ -1,6 +1,3 @@
-.projects__wrapper {
-	width: 100%;
-	max-width: 80rem;
-	margin: 0 auto;
-	// background-color: aquamarine;
+.projects__cards {
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
