@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({ title, description, tag, image, badges }) =
 	));
 
 	return (
-		<div className="card bg-base-100 w-96 shadow-sm">
+		<div className="card bg-base-100 w-full shadow-md">
 			<figure>
 				<img
 					src={
