@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
 						<form onSubmit={handleSubmit} className="space-y-5">
 							<div className="form-control">
 								<label className="label" htmlFor="contact_name">
-									<span className="label-text">Nombre</span>
+									<span className="text-black font-semibold mb-2">Nombre</span>
 								</label>
 
 								<input
@@ -80,7 +80,7 @@ const Contact: React.FC = () => {
 
 							<div className="form-control">
 								<label className="label" htmlFor="contact_email">
-									<span className="label-text">Email</span>
+									<span className="text-black font-semibold mb-2">Email</span>
 								</label>
 
 								<input
@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
 
 							<div className="form-control">
 								<label className="label" htmlFor="contact_message">
-									<span className="label-text">Mensaje</span>
+									<span className="text-black font-semibold mb-2">Mensaje</span>
 								</label>
 								<br />
 

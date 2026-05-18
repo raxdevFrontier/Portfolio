@@ -13,10 +13,7 @@ const ThemeSelector = () => {
 
 	// Aplica el tema cada vez que cambia isDarkTheme
 	useEffect(() => {
-		document.documentElement.setAttribute(
-			'data-theme',
-			isDarkTheme ? 'synthwave' : 'bumblebee',
-		);
+		document.documentElement.setAttribute('data-theme', isDarkTheme ? 'synthwave' : 'autumn');
 	}, [isDarkTheme]);
 
 	function changeTheme(e: React.ChangeEvent<HTMLInputElement>) {

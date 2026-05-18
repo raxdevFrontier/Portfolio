@@ -26,7 +26,7 @@ const About: React.FC = () => {
 				</span>
 				<span className="stats shadow" style={{ overflowX: 'visible' }}>
 					<span className="stat">
-						<span className="stat-title">Experiencia</span>
+						<span className="stat-title text-black">Experiencia</span>
 						<span className="stat-value">3+ años</span>
 					</span>
 				</span>
