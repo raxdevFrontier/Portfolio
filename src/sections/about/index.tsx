@@ -5,15 +5,13 @@ import SkillsSection from '@/components/skills';
 
 const About: React.FC = () => {
 	return (
-		<SectionWrapper showDivider>
-			<h2 id="about" className="text-2xl font-bold tracking-tight sm:text-3xl">
-				Sobre mi
-			</h2>
+		<SectionWrapper showDivider id="about">
+			<h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Sobre mi</h2>
 			<p className="text-justify mt-4 leading-relaxed max-w-prose sm:max-w-full">
 				Soy desarrollador frontend enfocado en construir interfaces claras, rápidas y
 				mantenibles. Me interesa especialmente la intersección entre desarrollo y diseño,
 				donde una buena decisión técnica mejora directamente la experiencia del usuario.
-				Trabajo con React, TailwindCSS y herramientas modernas, priorizando código limpio,
+				Trabajo con React, TypeScript y herramientas modernas, priorizando código limpio,
 				componentes reutilizables y una buena estructura desde el inicio del proyecto.
 			</p>
 			<p className="text-justify mt-4 leading-relaxed max-w-prose sm:max-w-full">

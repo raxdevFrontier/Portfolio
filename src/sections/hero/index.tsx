@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Hero: React.FC = () => {
 	return (
-		<section className="hero bg-base-200 min-h-screen">
+		<section id="home" className="hero bg-base-200 min-h-screen">
 			<div className="hero-content flex-col lg:flex-row-reverse gap-20">
 				<img
 					src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
