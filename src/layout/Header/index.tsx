@@ -1,11 +1,10 @@
 import React from 'react';
 import ThemeSelector from '@/components/themeSelector';
-import useMatchMedia from '@/hooks/useMatchMedia';
+import LanguageSelector from '@/components/languageSelector';
 
 export const Header: React.FC = () => {
-	const { isDesktop } = useMatchMedia();
 	return (
-		<div className="navbar bg-base-100 shadow-sm">
+		<div className="fixed navbar bg-base-100 shadow-sm z-10">
 			<div className="navbar-start">
 				<div className="dropdown">
 					<div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -31,28 +30,34 @@ export const Header: React.FC = () => {
 						className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
 					>
 						<li>
-							<a href="/">Home</a>
+							<a href="#home">Home</a>
 						</li>
 						<li>
-							<a href="#">Mis Proyectos</a>
+							<a href="#projects">Mis Proyectos</a>
 						</li>
 						<li>
 							<a href="#about">Sobre Mi</a>
+						</li>
+						<li>
+							<a href="#contact">Contacto</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div className="navbar-center">
-				<a className="btn btn-ghost text-4xl">RaxDev</a>
+				<a className="btn btn-ghost text-4xl" href="/">
+					RaxDev
+				</a>
 			</div>
 			<div className="navbar-end gap-2 sm:gap-4">
-				<select defaultValue="ES" className="select w-auto">
-					<option className="hidden md:inline" disabled={true}>
+				{/* <select defaultValue="ES" className="select w-auto">
+					<option className="hidden md:inline-block w-[11rem]" disabled={true}>
 						Selecciona un idioma
 					</option>
 					<option>ES</option>
 					<option>EN</option>
-				</select>
+				</select> */}
+				<LanguageSelector />
 				<ThemeSelector />
 			</div>
 		</div>
