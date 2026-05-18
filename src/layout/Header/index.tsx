@@ -1,7 +1,9 @@
-import React from 'react'
-import ThemeSelector from '@/components/themeSelector'
+import React from 'react';
+import ThemeSelector from '@/components/themeSelector';
+import useMatchMedia from '@/hooks/useMatchMedia';
 
 export const Header: React.FC = () => {
+	const { isDesktop } = useMatchMedia();
 	return (
 		<div className="navbar bg-base-100 shadow-sm">
 			<div className="navbar-start">
@@ -29,25 +31,32 @@ export const Header: React.FC = () => {
 						className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
 					>
 						<li>
-							<a>Homepage</a>
+							<a href="/">Home</a>
 						</li>
 						<li>
-							<a>Portfolio</a>
+							<a href="#">Mis Proyectos</a>
 						</li>
 						<li>
-							<a>About</a>
+							<a href="#about">Sobre Mi</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div className="navbar-center">
-				<a className="btn btn-ghost text-xl">RaxDev</a>
+				<a className="btn btn-ghost text-4xl">RaxDev</a>
 			</div>
-			<div className="navbar-end">
+			<div className="navbar-end gap-2 sm:gap-4">
+				<select defaultValue="ES" className="select w-auto">
+					<option className="hidden md:inline" disabled={true}>
+						Selecciona un idioma
+					</option>
+					<option>ES</option>
+					<option>EN</option>
+				</select>
 				<ThemeSelector />
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default Header
+export default Header;

@@ -6,7 +6,9 @@ import SkillsSection from '@/components/skills';
 const About: React.FC = () => {
 	return (
 		<SectionWrapper showDivider>
-			<h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Sobre mi</h2>
+			<h2 id="about" className="text-2xl font-bold tracking-tight sm:text-3xl">
+				Sobre mi
+			</h2>
 			<p className="text-justify mt-4 leading-relaxed max-w-prose sm:max-w-full">
 				Soy desarrollador frontend enfocado en construir interfaces claras, rápidas y
 				mantenibles. Me interesa especialmente la intersección entre desarrollo y diseño,
