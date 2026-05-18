@@ -1,6 +1,7 @@
 import React from 'react';
 import ThemeSelector from '@/components/themeSelector';
 import LanguageSelector from '@/components/languageSelector';
+import { languages } from '@/components/languageSelector/languages';
 
 export const Header: React.FC = () => {
 	return (
@@ -50,14 +51,7 @@ export const Header: React.FC = () => {
 				</a>
 			</div>
 			<div className="navbar-end gap-2 sm:gap-4">
-				{/* <select defaultValue="ES" className="select w-auto">
-					<option className="hidden md:inline-block w-[11rem]" disabled={true}>
-						Selecciona un idioma
-					</option>
-					<option>ES</option>
-					<option>EN</option>
-				</select> */}
-				<LanguageSelector />
+				<LanguageSelector languages={languages} />
 				<ThemeSelector />
 			</div>
 		</div>

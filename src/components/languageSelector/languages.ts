@@ -1,17 +1,11 @@
-export const languages = [
-	{
-		locale: 'es', // código de idioma (i18n)
-		flagCode: 'es', // código de bandera (flagcdn)
-		alpha: 'ES', // etiqueta corta para el selector
-		label: 'Español', // nombre completo
-	},
-	{
-		locale: 'en',
-		flagCode: 'gb',
-		alpha: 'EN',
-		label: 'English',
-	},
-] as const;
+export interface Language {
+	locale: string;
+	flagCode: string;
+	alpha: string;
+	label: string;
+}
 
-export type Language = (typeof languages)[number];
-export type Locale = Language['locale'];
+export const languages: Language[] = [
+	{ locale: 'es', flagCode: 'es', alpha: 'ES', label: 'Español' },
+	{ locale: 'en', flagCode: 'gb', alpha: 'EN', label: 'English' },
+];

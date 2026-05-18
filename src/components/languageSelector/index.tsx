@@ -1,25 +1,33 @@
 import React, { useState } from 'react';
-import { languages, type Language } from './languages';
+import type { Language } from './languages';
 
-const LanguageSelector: React.FC = () => {
-	const [selected, setSelected] = useState<Language>(languages[0]);
+interface LanguageSelectorProps {
+	languages: Language[];
+}
 
+const LanguageSelector: React.FC<LanguageSelectorProps> = ({ languages }) => {
+	const showSelector = languages?.length > 1;
+	const [selectedLanguage, setSelectedLanguage] = useState<Language | undefined>(
+		languages?.length > 1 ? languages[0] : undefined,
+	);
 	const handleSelect = (language: Language) => {
-		setSelected(language);
+		setSelectedLanguage(language);
 		(document.activeElement as HTMLElement)?.blur(); // 👈 cierra el dropdown
 	};
+
+	if (!showSelector) return null;
 
 	return (
 		<div className="dropdown dropdown-end">
 			{/* Trigger */}
 			<div tabIndex={0} role="button" className="btn btn-ghost gap-2">
 				<img
-					src={`https://flagcdn.com/${selected.flagCode}.svg`}
-					alt={selected.label}
+					src={`https://flagcdn.com/${selectedLanguage?.flagCode}.svg`}
+					alt={selectedLanguage?.label}
 					width="24"
 					className="rounded-sm"
 				/>
-				<span>{selected.alpha}</span>
+				<span>{selectedLanguage?.alpha}</span>
 			</div>
 
 			{/* Opciones */}
@@ -34,7 +42,7 @@ const LanguageSelector: React.FC = () => {
 							className="flex items-center gap-2"
 						>
 							<img
-								src={`https://flagcdn.com/${language.flagCode}.svg`}
+								src={`https://flagcdn.com/${language?.flagCode}.svg`}
 								alt={language.label}
 								width="24"
 								className="rounded-sm"
