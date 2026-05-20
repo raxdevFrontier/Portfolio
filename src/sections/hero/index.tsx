@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
 						Me enfoco en construir experiencias web rápidas, limpias y centradas en el
 						usuario.
 					</p>
-					<button className="btn btn-primary">Get Started</button>
+					{/* <button className="btn btn-primary">Get Started</button> */}
 				</div>
 			</div>
 		</section>
