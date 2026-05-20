@@ -2,8 +2,11 @@ import React from 'react';
 import { SiReact } from 'react-icons/si';
 import SectionWrapper from '@/components/sectionWrapper';
 import SkillsSection from '@/components/skills';
+import useThemeMode from '@/hooks/useThemeMode';
 
 const About: React.FC = () => {
+	const { isDark } = useThemeMode();
+
 	return (
 		<SectionWrapper showDivider id="about">
 			<h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Sobre mi</h2>
@@ -24,9 +27,12 @@ const About: React.FC = () => {
 				<span className="badge badge-xl badge-secondary">
 					<SiReact /> REACT
 				</span>
-				<span className="stats shadow" style={{ overflowX: 'visible' }}>
+				<span
+					className={'stats shadow-lg ' + (isDark ? 'ring' : '')}
+					style={{ overflowX: 'visible' }}
+				>
 					<span className="stat">
-						<span className="stat-title text-black">Experiencia</span>
+						<span className="stat-title text-base-content">Experiencia</span>
 						<span className="stat-value">3+ años</span>
 					</span>
 				</span>

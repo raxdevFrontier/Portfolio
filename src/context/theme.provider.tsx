@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Theme, ThemeContext } from './theme.context';
+import { type Theme, ThemeContext } from './theme.context';
 
 const LIGHT_THEME = 'autumn';
 const DARK_THEME = 'synthwave';
