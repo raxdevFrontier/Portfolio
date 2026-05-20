@@ -1,21 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useContext } from 'react';
+import { ThemeContext } from '@/context/theme.context';
 
 function useThemeMode() {
-	const [isDark, setIsDark] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches)
+	const context = useContext(ThemeContext);
 
-	useEffect(() => {
-		const media = window.matchMedia('(prefers-color-scheme: dark)')
+	if (!context) {
+		throw new Error('useThemeMode must be used within ThemeProvider');
+	}
 
-		const listener = (e: MediaQueryListEvent) => {
-			setIsDark(e.matches)
-		}
-
-		media.addEventListener('change', listener)
-
-		return () => media.removeEventListener('change', listener)
-	}, [])
-
-	return isDark
+	return context;
 }
 
-export default useThemeMode
+export default useThemeMode;
