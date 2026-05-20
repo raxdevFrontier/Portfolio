@@ -1,12 +1,15 @@
 import React from 'react';
 
+const DEFAULT_IMAGE = 'https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp';
+
 export const Hero: React.FC = () => {
 	return (
 		<section id="home" className="hero bg-base-200 min-h-screen">
 			<div className="hero-content flex-col lg:flex-row-reverse gap-20">
 				<img
-					src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
 					className="max-w-lg rounded-lg shadow-2xl"
+					src={DEFAULT_IMAGE}
+					alt="imagen de perfil"
 				/>
 				<div>
 					<h1 className="text-4xl font-bold sm:text-5xl">
