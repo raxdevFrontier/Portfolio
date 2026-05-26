@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ThemeSelector from '@/components/themeSelector';
 import LanguageSelector from '@/components/languageSelector';
 import { languages } from '@/components/languageSelector/languages';
+import { I18nContext } from '@/context/i18n/i18n.context';
 
 export const Header: React.FC = () => {
+	const { t } = useContext(I18nContext);
+
 	return (
 		<div className="fixed navbar bg-base-100 shadow-sm z-10">
 			<div className="navbar-start">
@@ -26,28 +29,27 @@ export const Header: React.FC = () => {
 						</svg>
 					</div>
 					<ul
-						// tabIndex="-1"
 						tabIndex={-1}
 						className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
 					>
 						<li>
-							<a href="#home">Home</a>
+							<a href="#home">{t.nav.home}</a>
 						</li>
 						<li>
-							<a href="#projects">Mis Proyectos</a>
+							<a href="#projects">{t.nav.projects}</a>
 						</li>
 						<li>
-							<a href="#about">Sobre Mi</a>
+							<a href="#about">{t.nav.about}</a>
 						</li>
 						<li>
-							<a href="#contact">Contacto</a>
+							<a href="#contact">{t.nav.contact}</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div className="navbar-center">
 				<a className="btn btn-ghost text-4xl" href="/">
-					RaxDev
+					{t.nav.mainText}
 				</a>
 			</div>
 			<div className="navbar-end gap-2 sm:gap-4">
