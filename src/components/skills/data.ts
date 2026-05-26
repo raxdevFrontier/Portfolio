@@ -24,6 +24,7 @@ import {
 export const skillCategories: SkillCategory[] = [
 	{
 		title: 'Frontend',
+		descriptionKey: 'frontend',
 		description: 'Tecnologías principales para construir interfaces modernas.',
 		skills: [
 			{ name: 'React', icon: SiReact, level: 'main' },
@@ -37,6 +38,7 @@ export const skillCategories: SkillCategory[] = [
 	},
 	{
 		title: 'UI',
+		descriptionKey: 'ui',
 		description: 'Herramientas y librerías para diseño visual y componentes.',
 		skills: [
 			{ name: 'TailwindCSS', icon: SiTailwindcss, level: 'main', color: '#38B3AD' },
@@ -47,6 +49,7 @@ export const skillCategories: SkillCategory[] = [
 	},
 	{
 		title: 'Tools',
+		descriptionKey: 'tools',
 		description: 'Flujo de trabajo, versiones y utilidades de desarrollo.',
 		skills: [
 			{ name: 'Git', icon: SiGit, level: 'main', color: '#F05033' },
@@ -58,6 +61,7 @@ export const skillCategories: SkillCategory[] = [
 	},
 	// {
 	// 	title: 'Testing',
+	// 	descriptionKey: 'testing',
 	// 	description: 'Calidad, validación y pruebas de interfaces.',
 	// 	skills: [
 	// 		{ name: 'Testing Library', icon: SiTestinglibrary, level: 'main' },

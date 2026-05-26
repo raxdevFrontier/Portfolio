@@ -22,6 +22,17 @@ export const en = {
 		experienceLabel: 'Experience',
 		experienceYears: 'years',
 	},
+	skills: {
+		title: 'Technical stack and skills',
+		subtitle: 'Technologies I use for building modern interfaces.',
+		description: 'Here you can see the technologies I use.',
+		categories: {
+			frontend: 'Main technologies used to build modern interfaces.',
+			ui: 'Tools and libraries for UI design and components.',
+			tools: 'Workflow, version control and development utilities.',
+			// testing: 'Quality, validation and interface tests.',
+		},
+	},
 	contact: {
 		title: 'Contact',
 		name: 'Name',

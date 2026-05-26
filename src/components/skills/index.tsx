@@ -1,21 +1,22 @@
 import { FaCheckCircle } from 'react-icons/fa';
 import { skillCategories } from './data';
 import SkillCategoryCard from './skillCategory.fragment';
+import { I18nContext } from '@/context/i18n/i18n.context';
+import { useContext } from 'react';
 
 const SkillsSection: React.FC = () => {
+	const { t } = useContext(I18nContext);
 	return (
 		<aside className="mt-10">
 			<div className="mb-10 max-w-2xl md:max-w-full">
 				<div className="inline-flex items-center gap-2 rounded-full bg-base-200 px-4 py-2 text-sm">
 					<FaCheckCircle className="text-success" />
-					Stack técnico y habilidades
+					{t.skills.title}
 				</div>
 				<h3 className="mt-4 text-xl font-bold tracking-tight sm:text-2xl">
-					Tecnologías que uso para construir interfaces modernas
+					{t.skills.subtitle}
 				</h3>
-				<p className="mt-3 text-base opacity-70">
-					A continuación puedes ver las tecnologias que uso.
-				</p>
+				<p className="mt-3 text-base opacity-70">{t.skills.description}</p>
 			</div>
 
 			<div className="grid gap-6 md:grid-cols-2">

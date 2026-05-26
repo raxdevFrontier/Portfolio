@@ -18,6 +18,9 @@ export type Skill = {
 
 export type SkillCategory = {
 	title: string;
+	descriptionKey: SkillCategoryTranslationKey;
 	description: string;
 	skills: Skill[];
 };
+
+export type SkillCategoryTranslationKey = 'frontend' | 'ui' | 'tools' | 'testing';
