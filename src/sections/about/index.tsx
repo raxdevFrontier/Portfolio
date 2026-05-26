@@ -1,39 +1,51 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { SiReact } from 'react-icons/si';
 import SectionWrapper from '@/components/sectionWrapper';
 import SkillsSection from '@/components/skills';
 import useThemeMode from '@/hooks/useThemeMode';
+import { I18nContext } from '@/context/i18n/i18n.context';
 
+function getYearsLabel(startYear: number): string {
+	const now = new Date();
+
+	const currentYear = now.getFullYear();
+	const currentMonth = now.getMonth(); // 0-11
+
+	const years = currentYear - startYear;
+
+	// Más de 3 meses desde enero
+	const exceededThreeMonths = currentMonth > 2;
+
+	return exceededThreeMonths ? `+${years}` : `${years}`;
+}
 const About: React.FC = () => {
+	const experience = getYearsLabel(2023);
 	const { isDark } = useThemeMode();
+
+	const { t } = useContext(I18nContext);
 
 	return (
 		<SectionWrapper showDivider id="about">
-			<h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Sobre mi</h2>
+			<h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{t.about.title}</h2>
 			<p className="text-justify mt-4 leading-relaxed max-w-prose sm:max-w-full">
-				Soy desarrollador frontend enfocado en construir interfaces claras, rápidas y
-				mantenibles. Me interesa especialmente la intersección entre desarrollo y diseño,
-				donde una buena decisión técnica mejora directamente la experiencia del usuario.
-				Trabajo con React, TypeScript y herramientas modernas, priorizando código limpio,
-				componentes reutilizables y una buena estructura desde el inicio del proyecto.
+				{t.about.paragraph1}
 			</p>
 			<p className="text-justify mt-4 leading-relaxed max-w-prose sm:max-w-full">
-				Disfruto convirtiendo ideas en interfaces funcionales y bien pensadas. Me gusta
-				trabajar en productos donde el detalle importa y cada interacción tiene un
-				propósito. Más allá del código, me interesa entender el problema real y aportar
-				soluciones simples, claras y escalables.
+				{t.about.paragraph2}
 			</p>
 			<aside className="flex justify-center place-items-center gap-8 mt-8">
 				<span className="badge badge-xl badge-secondary">
-					<SiReact /> REACT
+					<SiReact /> {t.about.mainTechName}
 				</span>
 				<span
 					className={'stats shadow-lg ' + (isDark ? 'ring' : '')}
 					style={{ overflowX: 'visible' }}
 				>
 					<span className="stat">
-						<span className="stat-title text-base-content">Experiencia</span>
-						<span className="stat-value">3+ años</span>
+						<span className="stat-title text-base-content">
+							{t.about.experienceLabel}
+						</span>
+						<span className="stat-value">{`${experience} ${t.about.experienceYears}`}</span>
 					</span>
 				</span>
 			</aside>
