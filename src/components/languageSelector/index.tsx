@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import type { Language } from './languages';
+import { I18nContext } from '@/context/i18n/i18n.context';
 
 interface LanguageSelectorProps {
 	languages: Language[];
@@ -7,12 +8,16 @@ interface LanguageSelectorProps {
 
 const LanguageSelector: React.FC<LanguageSelectorProps> = ({ languages }) => {
 	const showSelector = languages?.length > 1;
-	const [selectedLanguage, setSelectedLanguage] = useState<Language | undefined>(
-		languages?.length > 1 ? languages[0] : undefined,
-	);
+
+	const { locale, setLocale } = useContext(I18nContext);
+
+	const selectedLanguage = languages.find((language) => language.locale === locale);
+
 	const handleSelect = (language: Language) => {
-		setSelectedLanguage(language);
-		(document.activeElement as HTMLElement)?.blur(); // 👈 cierra el dropdown
+		setLocale(language.locale);
+
+		// cerrar dropdown
+		(document.activeElement as HTMLElement)?.blur();
 	};
 
 	if (!showSelector) return null;
