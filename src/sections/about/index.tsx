@@ -4,20 +4,8 @@ import SectionWrapper from '@/components/sectionWrapper';
 import SkillsSection from '@/components/skills';
 import useThemeMode from '@/hooks/useThemeMode';
 import { I18nContext } from '@/context/i18n/i18n.context';
+import { getYearsLabel } from '@/utils/dates';
 
-function getYearsLabel(startYear: number): string {
-	const now = new Date();
-
-	const currentYear = now.getFullYear();
-	const currentMonth = now.getMonth(); // 0-11
-
-	const years = currentYear - startYear;
-
-	// Más de 3 meses desde enero
-	const exceededThreeMonths = currentMonth > 2;
-
-	return exceededThreeMonths ? `+${years}` : `${years}`;
-}
 const About: React.FC = () => {
 	const experience = getYearsLabel(2023);
 	const { isDark } = useThemeMode();
