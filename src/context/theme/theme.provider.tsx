@@ -13,8 +13,7 @@ function getInitialTheme(): Theme {
 
 	return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
-
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
+export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 	const [theme, setTheme] = useState<Theme>(getInitialTheme);
 
 	useEffect(() => {
@@ -41,6 +40,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 			{children}
 		</ThemeContext.Provider>
 	);
-}
+};
 
 export default ThemeProvider;
