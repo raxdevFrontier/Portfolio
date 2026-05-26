@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { I18nContext } from '@/context/i18n/i18n.context';
 
 const DEFAULT_IMAGE = 'https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp';
 
 export const Hero: React.FC = () => {
+	const { t } = useContext(I18nContext);
+
 	return (
 		<section id="home" className="hero bg-base-200 min-h-screen">
 			<div className="hero-content flex-col lg:flex-row-reverse gap-20">
@@ -13,14 +16,14 @@ export const Hero: React.FC = () => {
 				/>
 				<div>
 					<h1 className="text-4xl font-bold sm:text-5xl">
-						Hola, soy <span className="text-primary underline">RaxDev</span>
+						{t.hero.title}
+						<span className="text-primary underline">{t.hero.alias}</span>!
+						{/* ¡Hola, soy <span className="text-primary underline">RaxDev</span>! */}
 					</h1>
 					<p className="text-justify py-6">
-						Mi nombre es Oscar y soy un Desarrollador Frontend especializado en React,
-						TypeScript.
+						{t.hero.subtitle1}
 						<br />
-						Me enfoco en construir experiencias web rápidas, limpias y centradas en el
-						usuario.
+						{t.hero.subtitle2}
 					</p>
 					{/* <button className="btn btn-primary">Get Started</button> */}
 				</div>
