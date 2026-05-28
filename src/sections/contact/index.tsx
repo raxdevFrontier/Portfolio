@@ -51,7 +51,8 @@ const Contact: React.FC = () => {
 				{t.contact.description2}
 			</p>
 
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+				{/* TODO: WIP */}
 				{/* Formulario */}
 				{/* <div className="card bg-base-200 shadow-xl">
 					<div className="card-body">
@@ -183,7 +184,9 @@ const Contact: React.FC = () => {
 
 				<aside className="card bg-base-200 shadow-xl">
 					<div className="card-body">
-						<h3 className="card-title text-2xl mb-4">{t.contact.cardTitle}</h3>
+						<h3 className="card-title text-xl md:text-2xl mb-4">
+							{t.contact.cardTitle}
+						</h3>
 
 						<div className="space-y-4">
 							<a
