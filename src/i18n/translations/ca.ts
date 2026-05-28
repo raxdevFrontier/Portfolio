@@ -14,6 +14,9 @@ export const ca = {
 	},
 	projects: {
 		title: 'Els meus projectes',
+		emptyTitle: 'Projectes en construcción',
+		emptyDescription:
+			'Actualment estic treballant en nous projectes personals i profesionals per afegir-los al portfoli. Molt aviat podras veure aqui alguns dels meus treballs i aplicacions frontend.',
 	},
 	about: {
 		title: 'Sobre mi',

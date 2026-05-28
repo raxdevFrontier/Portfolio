@@ -14,6 +14,9 @@ export const en = {
 	},
 	projects: {
 		title: 'My projects',
+		emptyTitle: 'Projects in construction',
+		emptyDescription:
+			'Currently I am working on new personal and professional projects to add them to my portfolio. Soon you will be able to see here some of my works and frontend applications.',
 	},
 	about: {
 		title: 'About me',
