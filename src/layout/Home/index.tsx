@@ -3,9 +3,6 @@ import Hero from '@/sections/hero';
 import Projects from '@/sections/myProjects';
 import About from '@/sections/about';
 import Contact from '@/sections/contact';
-// import Skills from '@/components/sections/Skills'
-// import Extra from '@/components/sections/Extra'
-// import Contact from '@/components/sections/Contact'
 
 export const Home: React.FC = () => {
 	return (
@@ -13,10 +10,8 @@ export const Home: React.FC = () => {
 			<Hero />
 			<section className="w-full">
 				<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-					<Projects />
+					<Projects projectsList={undefined} />
 					<About />
-					{/* <Skills /> */}
-					{/* <Extra /> */}
 					<Contact />
 				</div>
 			</section>
