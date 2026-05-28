@@ -35,10 +35,25 @@ export const en = {
 	},
 	contact: {
 		title: 'Contact',
-		name: 'Name',
-		email: 'Email',
-		message: 'Message',
-		send: 'Send message',
-		success: 'Message sent successfully.',
+		description1:
+			'Do you have a proposal, a project, or do you simply want to chat about front-end development, React or UI design?',
+		description2: 'I’m open to new opportunities and collaborations',
+		email: 'raxdev.frontier@gmail.com',
+		cardTitle: 'Contact information',
+		commentTitle: 'Always open to new and interesting projects',
+		commentSubtitle:
+			'Currently open to collaborations, front-end projects and remote opportunities.',
+		linkedin: 'linkedin.com/in/oscar-HF',
+		github: 'github.com/raxdevFrontier',
+		form: {
+			nameLabel: 'Name',
+			namePlaceholder: 'Your name',
+			emailLabel: 'Email',
+			emailPlaceholder: 'your@email.com',
+			messageLabel: 'Message',
+			messagePlaceholder: 'Write your message here',
+			sendBtn: 'Send message',
+			successFeedback: 'Message sent successfully.',
+		},
 	},
 };

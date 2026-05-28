@@ -1,7 +1,3 @@
-export function getCurrentYear(): number {
-	return new Date().getFullYear();
-}
-
 export function getYearsLabel(startYear: number): string {
 	const now = new Date();
 

@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useState } from 'react';
 import SectionWrapper from '@/components/sectionWrapper';
 import { SiGithub, SiGmail } from 'react-icons/si';
 import { FaLinkedin } from 'react-icons/fa';
+import { I18nContext } from '@/context/i18n/i18n.context';
 
 const Contact: React.FC = () => {
 	const [isSent, setIsSent] = useState(false);
-
 	const [formData, setFormData] = useState({
 		name: '',
 		email: '',
 		message: '',
 	});
+
+	const { t } = useContext(I18nContext);
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
 		setFormData({
@@ -20,7 +22,7 @@ const Contact: React.FC = () => {
 		});
 	};
 
-	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+	const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
 		e.preventDefault();
 
 		// Simulación de envío
@@ -42,15 +44,16 @@ const Contact: React.FC = () => {
 
 	return (
 		<SectionWrapper id="contact" showDivider>
-			<h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Contacto</h2>
+			<h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{t.contact.title}</h2>
 			<p className="mt-3 mb-10 text-base opacity-70">
-				¿Tienes una propuesta, proyecto o simplemente quieres hablar sobre frontend, React o
-				diseño de interfaces? <br /> Estoy abierto a nuevas oportunidades y colaboraciones.
+				{t.contact.description1}
+				<br />
+				{t.contact.description2}
 			</p>
 
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 				{/* Formulario */}
-				<div className="card bg-base-200 shadow-xl">
+				{/* <div className="card bg-base-200 shadow-xl">
 					<div className="card-body">
 						<h3 className="card-title text-2xl mb-4">Envíame un mensaje</h3>
 
@@ -124,10 +127,10 @@ const Contact: React.FC = () => {
 							</button>
 						</form>
 					</div>
-				</div>
+				</div> */}
 
 				{/* Información lateral */}
-				<div className="flex flex-col gap-6">
+				{/* <div className="flex flex-col gap-6">
 					<div className="card bg-base-200 shadow-xl">
 						<div className="card-body">
 							<h3 className="card-title text-2xl mb-4">Información de contacto</h3>
@@ -176,7 +179,50 @@ const Contact: React.FC = () => {
 							</p>
 						</div>
 					</div>
-				</div>
+				</div> */}
+
+				<aside className="card bg-base-200 shadow-xl">
+					<div className="card-body">
+						<h3 className="card-title text-2xl mb-4">{t.contact.cardTitle}</h3>
+
+						<div className="space-y-4">
+							<a
+								href="mailto:raxdev.frontier@gmail.com"
+								className="flex items-center gap-3 hover:text-primary transition-colors"
+							>
+								<SiGmail size={20} />
+								<span>{t.contact.email}</span>
+							</a>
+
+							<a
+								href="https://github.com/raxdevFrontier"
+								target="_blank"
+								rel="noreferrer"
+								className="flex items-center gap-3 hover:text-primary transition-colors"
+							>
+								<SiGithub size={20} />
+								<span>{t.contact.github}</span>
+							</a>
+
+							<a
+								href="https://linkedin.com/in/oscar-HF"
+								target="_blank"
+								rel="noreferrer"
+								className="flex items-center gap-3 hover:text-primary transition-colors"
+							>
+								<FaLinkedin size={20} />
+								<span>{t.contact.linkedin}</span>
+							</a>
+						</div>
+					</div>
+				</aside>
+
+				<aside className="card bg-primary text-primary-content shadow-xl">
+					<div className="card-body">
+						<h3 className="text-xl font-semibold">{t.contact.commentTitle}</h3>
+						<p className="opacity-90">{t.contact.commentSubtitle}</p>
+					</div>
+				</aside>
 			</div>
 		</SectionWrapper>
 	);
