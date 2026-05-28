@@ -13,6 +13,9 @@ export const es = {
 		subtitle2:
 			'Me enfoco en construir experiencias web rápidas, limpias y centradas en el usuario.',
 	},
+	projects: {
+		title: 'Mis proyectos',
+	},
 	about: {
 		title: 'Sobre mi',
 		paragraph1:

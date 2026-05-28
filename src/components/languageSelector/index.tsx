@@ -2,6 +2,8 @@ import React, { useContext, useState } from 'react';
 import type { Language } from './languages';
 import { I18nContext } from '@/context/i18n/i18n.context';
 
+const FLAGS_BASE_URL = 'https://flagcdn.io/flags/4x3/';
+const FLAGS_EXTENSION_URL = '.svg';
 interface LanguageSelectorProps {
 	languages: Language[];
 }
@@ -27,7 +29,8 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ languages }) => {
 			{/* Trigger */}
 			<div tabIndex={0} role="button" className="btn btn-ghost gap-2">
 				<img
-					src={`https://flagcdn.com/${selectedLanguage?.flagCode}.svg`}
+					src={FLAGS_BASE_URL + selectedLanguage?.flagCode + FLAGS_EXTENSION_URL}
+					// src={`https://flagcdn.com/${selectedLanguage?.flagCode}.svg`}
 					alt={selectedLanguage?.label}
 					width="24"
 					className="rounded-sm"
@@ -47,7 +50,8 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ languages }) => {
 							className="flex items-center gap-2"
 						>
 							<img
-								src={`https://flagcdn.com/${language?.flagCode}.svg`}
+								src={`https://flagcdn.io/flags/4x3/${language?.flagCode}.svg`}
+								// src={`https://flagcdn.com/${language?.flagCode}.svg`}
 								alt={language.label}
 								width="24"
 								className="rounded-sm"

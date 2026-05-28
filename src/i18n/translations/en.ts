@@ -12,6 +12,9 @@ export const en = {
 		subtitle1: 'Frontend developer specialized in React, TypeScript.',
 		subtitle2: 'I focus on building fast, clean and user-centered web experiences.',
 	},
+	projects: {
+		title: 'My projects',
+	},
 	about: {
 		title: 'About me',
 		paragraph1:
