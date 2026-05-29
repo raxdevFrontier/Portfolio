@@ -5,11 +5,13 @@
 		dark --prefersdark,
 		bumblebee,
 		synthwave,
-		autumn;
+		autumn,
+		forest;
 }
 
 :root {
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-display: optional;
 }
 
 body {

@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import { type Theme, ThemeContext } from './theme.context';
 
 const LIGHT_THEME = 'autumn';
-const DARK_THEME = 'synthwave';
+const DARK_THEME = 'forest';
+// const DARK_THEME = 'synthwave';
 
 function getInitialTheme(): Theme {
 	const storedTheme = localStorage.getItem('theme');
