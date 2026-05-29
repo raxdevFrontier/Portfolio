@@ -1,46 +1,46 @@
 import React, { useContext } from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
 import SectionWrapper from '@/components/sectionWrapper';
 import { SiGithub, SiGmail } from 'react-icons/si';
 import { FaLinkedin } from 'react-icons/fa';
 import { I18nContext } from '@/context/i18n/i18n.context';
 
 const Contact: React.FC = () => {
-	const [isSent, setIsSent] = useState(false);
-	const [formData, setFormData] = useState({
-		name: '',
-		email: '',
-		message: '',
-	});
+	// const [isSent, setIsSent] = useState(false);
+	// const [formData, setFormData] = useState({
+	// 	name: '',
+	// 	email: '',
+	// 	message: '',
+	// });
 
 	const { t } = useContext(I18nContext);
 
-	const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-		setFormData({
-			...formData,
-			[e.target.name]: e.target.value,
-		});
-	};
+	// const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+	// 	setFormData({
+	// 		...formData,
+	// 		[e.target.name]: e.target.value,
+	// 	});
+	// };
 
-	const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
-		e.preventDefault();
+	// const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
+	// 	e.preventDefault();
 
-		// Simulación de envío
-		setTimeout(() => {
-			setIsSent(true);
-		}, 500);
+	// 	// Simulación de envío
+	// 	setTimeout(() => {
+	// 		setIsSent(true);
+	// 	}, 500);
 
-		// Limpiar formulario
-		setFormData({
-			name: '',
-			email: '',
-			message: '',
-		});
+	// 	// Limpiar formulario
+	// 	setFormData({
+	// 		name: '',
+	// 		email: '',
+	// 		message: '',
+	// 	});
 
-		setTimeout(() => {
-			setIsSent(false);
-		}, 3000);
-	};
+	// 	setTimeout(() => {
+	// 		setIsSent(false);
+	// 	}, 3000);
+	// };
 
 	return (
 		<SectionWrapper id="contact" showDivider>
