@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { I18nContext } from '@/context/i18n/i18n.context';
 
 // const DEFAULT_IMAGE = 'https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp';
-const MY_IMG_URL = '/mi_persona.JPG';
+const MY_IMG_URL = '/hero.webp';
 
 export const Hero: React.FC = () => {
 	const { t } = useContext(I18nContext);

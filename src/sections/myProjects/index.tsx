@@ -5,11 +5,9 @@ import SectionWrapper from '@/components/sectionWrapper';
 import { I18nContext } from '@/context/i18n/i18n.context';
 import type { ProjectData } from './model';
 import EmptyProjects from '@/components/emptyState';
+// import { projectsList } from './data';
 
-interface ProjectsProps {
-	projectsList?: ProjectData[];
-}
-const Projects: React.FC<ProjectsProps> = ({ projectsList }) => {
+const Projects: React.FC = () => {
 	const { t } = useContext(I18nContext);
 
 	const renderProjectsCards = (projects: ProjectData[] | undefined) => {
@@ -35,7 +33,8 @@ const Projects: React.FC<ProjectsProps> = ({ projectsList }) => {
 	return (
 		<SectionWrapper id="projects" showDivider>
 			<h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{t.projects.title}</h2>
-			{renderProjectsCards(projectsList)}
+			{renderProjectsCards(undefined)}
+			{/* {renderProjectsCards(projectsList)} */}
 		</SectionWrapper>
 	);
 };

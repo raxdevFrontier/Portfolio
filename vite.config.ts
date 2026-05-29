@@ -1,9 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
-import tailwindcss from '@tailwindcss/vite'
-import path from 'path'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
+import tailwindcss from '@tailwindcss/vite';
+import path from 'path';
 
 export default defineConfig({
+	build: {
+		target: 'esnext',
+	},
 	plugins: [react(), tailwindcss()],
 	resolve: {
 		alias: {
@@ -14,4 +17,4 @@ export default defineConfig({
 			'@hooks': path.resolve(__dirname, 'src/hooks'),
 		},
 	},
-})
+});
