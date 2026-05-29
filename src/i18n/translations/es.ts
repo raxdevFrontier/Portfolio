@@ -5,6 +5,7 @@ export const es = {
 		about: 'Sobre mí',
 		contact: 'Contacto',
 		mainText: 'RaxDev',
+		ariaLabelDropdownBtn: 'Menu desplegable',
 	},
 	hero: {
 		title: '!Hola, soy ',

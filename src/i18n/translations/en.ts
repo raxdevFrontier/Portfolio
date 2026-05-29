@@ -5,6 +5,7 @@ export const en = {
 		about: 'About me',
 		contact: 'Contact',
 		mainText: 'RaxDev',
+		ariaLabelDropdownBtn: 'Dropdown menu',
 	},
 	hero: {
 		title: 'Hi, I am ',

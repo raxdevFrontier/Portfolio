@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
 						className="btn btn-ghost btn-circle"
 						tabIndex={0}
 						role="button"
-						aria-label="dropdown menu"
+						aria-label={t.nav.ariaLabelDropdownBtn}
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
