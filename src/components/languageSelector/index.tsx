@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import type { Language } from './languages';
 import { I18nContext } from '@/context/i18n/i18n.context';
 
