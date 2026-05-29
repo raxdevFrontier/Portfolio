@@ -37,7 +37,7 @@ export const es = {
 			frontend: 'Tecnologías principales para construir interfaces modernas.',
 			ui: 'Herramientas y librerías para diseño visual y componentes.',
 			tools: 'Flujo de trabajo, versiones y utilidades de desarrollo.',
-			testing: 'Calidad, validación y pruebas de interfaces.',
+			// testing: 'Calidad, validación y pruebas de interfaces.',
 		},
 	},
 	contact: {

@@ -36,7 +36,7 @@ export const ca = {
 			frontend: 'Tecnologies principals per construir interfícies modernes.',
 			ui: 'Eines i llibreries per al disseny visual i els components.',
 			tools: 'Flux de treball, versions i utilitats de desenvolupament.',
-			testing: 'Qualitat, validació i proves d’interfícies.',
+			// testing: 'Qualitat, validació i proves d’interfícies.',
 		},
 	},
 	contact: {

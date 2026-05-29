@@ -23,4 +23,5 @@ export type SkillCategory = {
 	skills: Skill[];
 };
 
-export type SkillCategoryTranslationKey = 'frontend' | 'ui' | 'tools' | 'testing';
+export type SkillCategoryTranslationKey = 'frontend' | 'ui' | 'tools';
+// export type SkillCategoryTranslationKey = 'frontend' | 'ui' | 'tools' | 'testing';
