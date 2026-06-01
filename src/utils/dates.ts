@@ -9,5 +9,5 @@ export function getYearsLabel(startYear: number): string {
 	// Más de 3 meses desde enero
 	const exceededThreeMonths = currentMonth > 2;
 
-	return exceededThreeMonths ? `+${years}` : `${years}`;
+	return exceededThreeMonths ? `${years}+` : `${years}`;
 }

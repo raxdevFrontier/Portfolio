@@ -31,11 +31,11 @@ const Card: React.FC<CardProps> = ({ title, description, tag, image, badges }) =
 				/>
 			</figure>
 			<div className="card-body">
-				<h2 className="card-title">
+				<h3 className="card-title">
 					{title ? title : 'Card Title'}
 					{/* Card Title */}
 					{tag && <div className="badge badge-secondary">{tag}</div>}
-				</h2>
+				</h3>
 				{description && <p>{description}</p>}
 				<div className="card-actions justify-end">{badgeList}</div>
 			</div>
