@@ -1,300 +1,79 @@
-# 🧱 Estructura General
+# RaxDev
 
-- Hero (impacto inicial)
-- Proyectos (núcleo principal)
-- Sobre mí (contexto profesional)
-- Skills (credibilidad)
-- Sección diferencial (lo que te separa del resto)
-- Contacto (conversión)
-- Footer (cierre)
+Este es mi portfolio personal de desarrollador frontend web creado como primer paso para mostrar mi trabajo, mis habilidades y mi forma de construir interfaces modernas.
 
----
+Este proyecto nace con el objetivo de dar visibilidad a mi perfil profesional y presentar, de forma clara y directa, lo que puedo aportar como frontend developer.
 
-## 🟢 1. HERO
+## Sobre el proyecto
 
-### 🎯 Objetivo
+RaxDev es mi primer proyecto personal orientado a portfolio.  
+Lo he desarrollado para tener un espacio propio donde enseñar mis capacidades técnicas, mis proyectos y mi enfoque de trabajo, con la intención de facilitar futuras oportunidades laborales.
 
-Captar atención en 3–5 segundos y dejar claro:
+La idea principal ha sido construir una web:
 
-- Qué haces
-- En qué destacas
+- Moderna.
+- Profesional.
+- Responsive.
+- Visualmente atractiva.
+- Limpia y fácil de navegar.
 
-### 📄 Contenido
-
-**Título**  
-Frontend Developer especializado en interfaces rápidas y limpias
-
-**Subtítulo**  
-Trabajo con React construyendo experiencias modernas, optimizadas y centradas en el usuario.
-
-**Botones**
-
-- Ver proyectos
-- Contactar
-
-**Opcional**
-
-- Animación sutil
-- Preview de UI o código
-
-⚠️ **Evitar**
-
-- Párrafos largos
-- Frases genéricas
-
----
-
-## 🟡 2. PROYECTOS DESTACADOS
-
-### 🎯 Objetivo
-
-Demostrar habilidades reales con ejemplos concretos.
-
-### 📦 Estructura por proyecto
-
-**Nombre**  
-Task Manager App
-
-**Descripción breve**  
-Aplicación para gestionar tareas con filtros dinámicos y persistencia local.
-
-**Tu contribución**
-
-- Diseñé la UI desde cero
-- Implementé estado con React Hooks
-- Optimicé rendimiento con lazy loading
-
-**Tecnologías**
+## Tecnologías utilizadas
 
 - React
-- CSS / Tailwind
-- APIs
+- TypeScript
+- TailwindCSS
+- DaisyUI
 
-**Resultados**
+## Objetivo del diseño
 
-- Carga en menos de 1s
-- 100% responsive
+He querido crear una interfaz sencilla pero cuidada, evitando una sobrecarga visual innecesaria.  
+La prioridad ha sido transmitir profesionalidad, claridad y una sensación de orden, manteniendo un estilo minimalista y coherente.
 
-**Links**
+## Qué encontrarás en el portfolio
 
-- Demo
-- GitHub
+- **Hero**: una primera impresión breve y directa.
+- **Sobre mí**: resumen de mi perfil como desarrollador.
+- **Skills**: stack tecnológico y herramientas principales.
+- **Proyectos**: trabajos destacados.
+- **Contacto**: diferentes formas de ponerse en contacto conmigo.
 
-💡 **Mejora avanzada**
-Añadir:
+## Mi forma de trabajar
 
-- Ver detalles → Lleva a un mini case study del proyecto
+Este portfolio refleja mi forma de entender el desarrollo frontend:
 
-⚠️ **Evitar**
+- Componentes reutilizables.
+- Código organizado y mantenible.
+- Atención al detalle visual.
+- Diseño responsive.
+- Uso de tecnologías modernas y escalables.
 
-- Más de 5 proyectos
-- Proyectos sin explicación
-- Descripciones vagas
+## Estado del proyecto
 
----
+Este portfolio sigue en evolución.  
+Lo considero una base sobre la que seguir mejorando tanto a nivel visual como técnico, añadiendo nuevas secciones, refinando componentes y ampliando contenido a medida que crece mi experiencia.
 
-## 🔵 3. SOBRE MÍ
+## Instalación y ejecución
 
-### 🎯 Objetivo
+```bash
+git clone <URL_DEL_REPOSITORIO>
+cd <NOMBRE_DEL_PROYECTO>
+npm install
+npm run start
+```
 
-Dar contexto profesional sin aburrir.
+o también puedes usar pnpm:
 
-### 📄 Estructura
+```bash
+git clone <URL_DEL_REPOSITORIO>
+cd <NOMBRE_DEL_PROYECTO>
+pnpm install
+pnpm run start
+```
 
-**Quién eres**  
-Soy desarrollador frontend enfocado en crear interfaces claras, rápidas y usables.
+## Contacto
 
-**En qué estás trabajando**  
-Actualmente profundizando en rendimiento y arquitectura en React.
-
-**Cómo trabajas**  
-Me centro en código limpio, buenas prácticas y experiencia de usuario.
-
-⚠️ **Evitar**
-
-- Historias personales largas
-- Frases vacías (“me apasiona la tecnología”)
-
----
-
-## 🟣 4. SKILLS
-
-### 🎯 Objetivo
-
-Mostrar foco y credibilidad.
-
-### 📊 Estructura
-
-**Core**
-
-- JavaScript
-- React
-- CSS / Tailwind
-
-**Otros**
-
-- Git
-- APIs
-- Responsive Design
-
-⚠️ **Regla clave**  
-Si no puedes defenderlo en entrevista, no lo incluyas.
+Si quieres ponerte en contacto conmigo, puedes encontrarme a través de los canales indicados en la web.
 
 ---
 
-## 🟠 5. SECCIÓN DIFERENCIAL
-
-### 🎯 Objetivo
-
-Diferenciarte del 80% de juniors.
-
-### 🔀 Opciones (elige una)
-
-**A. Cómo trabajo**
-
-- Estructura de proyectos
-- Pensamiento en componentes
-- Optimización
-
-**B. Mini Case Study**
-
-- Problema
-- Solución
-- Decisiones técnicas
-
-**C. Actualmente estoy…**
-
-- Aprendiendo X
-- Construyendo X
-- Mejorando en X
-
----
-
-## ⚫ 6. CONTACTO
-
-### 🎯 Objetivo
-
-Facilitar que te contacten sin fricción.
-
-### 📄 Contenido
-
-- Email
-- LinkedIn
-- GitHub
-
-**Mensaje**  
-¿Trabajamos juntos? Estoy abierto a oportunidades.
-
-⚠️ **Evitar**
-
-- Formularios complejos
-- Demasiados pasos
-
----
-
-## 🧩 7. FOOTER
-
-### 📄 Contenido
-
-- Nombre
-- Año
-- Links (GitHub, LinkedIn)
-
----
-
-## 🎨 Flujo Visual del Portfolio
-
-Hero
-↓
-Proyectos
-↓
-Sobre mí
-↓
-Skills
-↓
-Sección diferencial
-↓
-Contacto
-↓
-Footer
-
----
-
-## ⚠️ Errores Comunes
-
-- Demasiadas animaciones
-- Texto genérico
-- Proyectos sin contexto
-- Exceso de proyectos mediocres
-- Diseño complejo pero poco usable
-
----
-
-## 🚀 Proceso Recomendado
-
-1. Define 3 proyectos sólidos
-2. Escribe TODO el contenido primero
-3. Diseña después
-
----
-
-## 🧠 Clave Final
-
-Un buen portfolio no impresiona por efectos visuales.
-
-Destaca porque:
-
-- Es claro
-- Demuestra habilidades reales
-- Comunica cómo piensas como desarrollador
-
-## Estructura carpetas
-
-portfolio/
-│
-├── public/
-│ ├── images/
-│ └── icons/
-│
-├── src/
-│ ├── app/
-│ │ ├── layout.tsx
-│ │ ├── page.tsx
-│ │ └── globals.css
-│ │
-│ ├── components/
-│ │ ├── layout/
-│ │ │ ├── Navbar.tsx
-│ │ │ └── Footer.tsx
-│ │ │
-│ │ ├── sections/
-│ │ │ ├── Hero.tsx
-│ │ │ ├── Projects.tsx
-│ │ │ ├── About.tsx
-│ │ │ ├── Skills.tsx
-│ │ │ ├── Extra.tsx
-│ │ │ └── Contact.tsx
-│ │ │
-│ │ ├── ui/
-│ │ │ ├── Button.tsx
-│ │ │ ├── Card.tsx
-│ │ │ └── Container.tsx
-│ │
-│ ├── data/
-│ │ └── projects.js
-│ │
-│ ├── styles/
-│ │ └── variables.css
-│
-└── package.json
-
-src/
-│
-├── components/
-│ └── themeSelector/
-├── Layout/
-│ ├── Footer/
-│ ├── Home/
-│ └── Header/
-├── sections/
-│ └── hero/
+Hecho con React, TypeScript, TailwindCSS y DaisyUI.
