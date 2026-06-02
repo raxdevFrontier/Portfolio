@@ -1,0 +1,27 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Evita clickjacking
+    X-Frame-Options = "DENY"
+
+    # Evita que el navegador adivine el tipo de contenido
+    X-Content-Type-Options = "nosniff"
+
+    # Controla qué información de referrer se envía
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Restringe qué recursos puede cargar la página (CSP)
+    Content-Security-Policy = """
+      default-src 'self';
+      img-src 'self' https://flagcdn.com https://img.daisyui.com;
+      style-src 'self' 'unsafe-inline';
+      script-src 'self';
+      font-src 'self';
+      connect-src 'self';
+    """
+
+    # Fuerza HTTPS
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+    # Limita acceso a APIs del navegador
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
