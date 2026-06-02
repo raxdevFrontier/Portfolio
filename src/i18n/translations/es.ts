@@ -6,6 +6,8 @@ export const es = {
 		contact: 'Contacto',
 		mainText: 'RaxDev',
 		ariaLabelDropdownBtn: 'Menu desplegable',
+		downloadCv: 'Descargar CV',
+		ariaLabelDownloadCv: 'Descargar currículum en PDF',
 	},
 	hero: {
 		title: '!Hola, soy ',
