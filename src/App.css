@@ -1,15 +1,10 @@
-:root {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+#root {
+}
 
-	header,
-	main,
-	footer {
-		border: 1px solid #000;
-		margin: 0 auto;
-		max-width: 37.5rem;
-		padding: 2rem;
-		text-align: center;
-	}
+.app__globalContainer {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto 1fr auto;
+	height: 100%;
+	box-sizing: border-box;
 }

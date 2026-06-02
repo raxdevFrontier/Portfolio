@@ -1,16 +1,16 @@
-import React from "react";
 import './App.css'
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Header from './layout/Header'
+import Home from './layout/Home'
+import Footer from './layout/Footer'
 
-export function App () {
-    return (
-        <>
-            <Header />
-            <Main />
-            <Footer />
-        </>
-
-    )
+function App() {
+	return (
+		<div className="app__globalContainer">
+			<Header />
+			<Home />
+			<Footer />
+		</div>
+	)
 }
+
+export default App

@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+@plugin "daisyui" {
+	themes:
+		light --default,
+		dark --prefersdark,
+		bumblebee,
+		synthwave,
+		autumn,
+		forest;
+}
+
+:root {
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-display: optional;
+}
+
+body {
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+section[id] {
+	scroll-margin-top: 4rem; /* ajuste de la altura de la navbar */
+}
