@@ -4,6 +4,7 @@ import { I18nContext } from '@/context/i18n/i18n.context';
 
 const FLAGS_BASE_URL = 'https://flagcdn.io/flags/4x3/';
 const FLAGS_EXTENSION_URL = '.svg';
+
 interface LanguageSelectorProps {
 	languages: Language[];
 }
@@ -30,7 +31,6 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ languages }) => {
 			<div tabIndex={0} role="button" className="btn btn-ghost gap-2">
 				<img
 					src={FLAGS_BASE_URL + selectedLanguage?.flagCode + FLAGS_EXTENSION_URL}
-					// src={`https://flagcdn.com/${selectedLanguage?.flagCode}.svg`}
 					alt={selectedLanguage?.label}
 					width="24"
 					className="rounded-sm"
@@ -41,7 +41,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ languages }) => {
 			{/* Opciones */}
 			<ul
 				tabIndex={0}
-				className="dropdown-content menu bg-base-200 rounded-box shadow-xl z-50 w-36 p-2"
+				className="dropdown-content menu bg-base-200 rounded-box shadow-xl z-50 w-36 mt-2 p-2 outline outline-gray-300"
 			>
 				{languages.map((language) => (
 					<li key={language.locale}>
@@ -51,7 +51,6 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ languages }) => {
 						>
 							<img
 								src={`https://flagcdn.io/flags/4x3/${language?.flagCode}.svg`}
-								// src={`https://flagcdn.com/${language?.flagCode}.svg`}
 								alt={language.label}
 								width="24"
 								className="rounded-sm"
