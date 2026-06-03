@@ -6,18 +6,19 @@ import DropdownMenu from '@/components/dropdown';
 import { languages } from '@/components/languageSelector/languages';
 import { I18nContext } from '@/context/i18n/i18n.context';
 import { CV_BY_LOCALE } from './data';
+import './index.scss';
 
 export const Header: React.FC = () => {
 	const { t, locale } = useContext(I18nContext);
 	const cvUrl = CV_BY_LOCALE[locale];
 
 	return (
-		<div className="fixed navbar bg-base-100 shadow-sm z-10">
+		<header className="fixed navbar bg-base-100 shadow-sm z-10">
 			<div className="navbar-start">
 				<DropdownMenu />
 			</div>
 			<div className="navbar-center">
-				<a className="btn btn-ghost text-2xl sm:text-3xl" href="/">
+				<a className="main-text btn btn-ghost text-2xl sm:text-3xl" href="/">
 					{t.nav.mainText}
 				</a>
 			</div>
@@ -35,7 +36,7 @@ export const Header: React.FC = () => {
 					{t.nav.downloadCv}
 				</a>
 			</div>
-		</div>
+		</header>
 	);
 };
 
