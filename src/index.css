@@ -10,8 +10,11 @@
 }
 
 :root {
-	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	/* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+	font-family: 'Lato', sans-serif;
 	font-display: optional;
+	font-weight: 400;
+	font-style: normal;
 }
 
 body {
