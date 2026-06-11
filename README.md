@@ -74,6 +74,92 @@ pnpm run start
 
 Si quieres ponerte en contacto conmigo, puedes encontrarme a través de los canales indicados en la web.
 
+
+
+[Hecho con React, TypeScript, TailwindCSS y DaisyUI.]
+
+
 ---
 
-Hecho con React, TypeScript, TailwindCSS y DaisyUI.
+
+
+# RaxDev
+
+This is my personal frontend web developer portfolio, created as a first step to showcase my work, my skills, and the way I build modern interfaces.
+
+This project was created to give visibility to my professional profile and present, in a clear and direct way, what I can bring as a frontend developer.
+
+## About the project
+
+RaxDev is my first personal portfolio project.  
+I developed it to have my own space where I can showcase my technical abilities, my projects, and my working approach, with the goal of opening up future job opportunities.
+
+The main idea has been to build a website that is:
+
+- Modern.
+- Professional.
+- Responsive.
+- Visually appealing.
+- Clean and easy to navigate.
+
+## Technologies used
+
+- React
+- TypeScript
+- TailwindCSS
+- DaisyUI
+
+## Design goal
+
+I wanted to create a simple but polished interface, avoiding unnecessary visual overload.  
+The priority was to convey professionalism, clarity, and a sense of order, while keeping a minimal and consistent style.
+
+## What you will find in the portfolio
+
+- **Hero**: a short and direct first impression.
+- **About me**: a summary of my profile as a developer.
+- **Skills**: technical stack and main tools.
+- **Projects**: featured work.
+- **Contact**: different ways to get in touch with me.
+
+## My way of working
+
+This portfolio reflects how I understand frontend development:
+
+- Reusable components.
+- Organized and maintainable code.
+- Attention to visual detail.
+- Responsive design.
+- Use of modern and scalable technologies.
+
+## Project status
+
+This portfolio is still evolving.  
+I consider it a foundation to keep improving both visually and technically, adding new sections, refining components, and expanding content as my experience grows.
+
+## Installation and running
+
+```bash
+git clone <REPOSITORY_URL>
+cd <PROJECT_NAME>
+npm install
+npm run start
+```
+
+Or you can also use pnpm:
+
+```bash
+git clone <REPOSITORY_URL>
+cd <PROJECT_NAME>
+pnpm install
+pnpm run start
+```
+
+## Contact
+
+If you want to get in touch with me, you can find me through the channels listed on the website.
+
+
+
+[Built with React, TypeScript, TailwindCSS, and DaisyUI.]
+
