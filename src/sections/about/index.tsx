@@ -22,7 +22,7 @@ const About: React.FC = () => {
 				{t.about.paragraph2}
 			</p>
 			<aside className="flex justify-center place-items-center gap-8 mt-8">
-				<span className="badge badge-xl badge-secondary">
+				<span className="badge badge-xl badge-secondary sm:text-2xl sm:p-5">
 					<SiReact /> {t.about.mainTechName}
 				</span>
 				<span
@@ -33,7 +33,7 @@ const About: React.FC = () => {
 						<span className="stat-title text-base-content">
 							{t.about.experienceLabel}
 						</span>
-						<span className="stat-value">{`${experience} ${t.about.experienceYears}`}</span>
+						<span className="stat-value max-sm:text-xl">{`${experience} ${t.about.experienceYears}`}</span>
 					</span>
 				</span>
 			</aside>
